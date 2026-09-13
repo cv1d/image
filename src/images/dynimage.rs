@@ -1237,7 +1237,7 @@ impl DynamicImage {
             Rect::from_xy_ranges(x..x + nwidth, 0..nheight)
         };
 
-        self.crop(select)
+        thumbnail.crop(select)
     }
 
     /// Performs a Gaussian blur on this image.
